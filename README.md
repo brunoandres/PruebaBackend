@@ -27,6 +27,7 @@ Para comenzar con este proyecto, asegúrate de tener Node.js 20 instalado en tu 
 ## Migraciones
 
 Una vez importada la base de datos, ejecutar los siguientes comandos para realizar migraciones
+Si el proyecto se ejecuta en MacOS, modificar en el package.json la siguiente linea ("migration:generate": "npm run typeorm -- -d ./db/typeorm.config.ts migration:generate ./db/migrations/%npm_config_name%") por esta ("migration:generate": "npm run typeorm -- -d ./db/typeorm.config.ts migration:generate ./db/migrations/$npm_config_name") así se guardan correctamente los nombres de las migraciones.
 
 1. Ejecutar la generación de una nueva migración, en este caso cambia la estructura de las tablas originales. Crea una relación de Employees con Company, quita campo cant_employees de la tabla employees. Cambio el tipo de dato para date_admission y agrego valor por defecto.
 

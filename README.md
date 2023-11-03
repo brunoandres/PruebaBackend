@@ -42,7 +42,7 @@ Si el proyecto se ejecuta en MacOS, modificar en el package.json la siguiente li
 
 ## Iniciar Servidor
 
-Para iniciar el servidor ejecutar el siguiente comando, una vez inciado estará listo en la siguiente ruta: (http://localhost:3000/)
+Para iniciar el servidor ejecutar el siguiente comando npm run start:dev, una vez inciado estará listo en la siguiente ruta: (http://localhost:3000/)
 
 
 ## Endpoints
